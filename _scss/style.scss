@@ -1,0 +1,88 @@
+@import "https://fonts.googleapis.com/css?family=Nunito";
+@import "variables.scss";
+
+* {
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: $bg;
+}
+
+::selection {
+  background: $selection;
+}
+
+.title {
+  color: $wh;
+  text-align: center;
+}
+.title p {
+  color: $wh;
+  font-size: 1.3em;
+}
+
+.title .notice {
+  color: $wh;
+}
+.title .notice span {
+  color: $wh;
+  font-weight: bold;
+  border-bottom: $wh 2px solid;
+}
+
+//STYLES
+.accordion {
+  background: $ac-bg;
+  color: $wh;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  transition: 400ms;
+}
+
+
+.accordion:hover {
+  background: $hover;
+  color: $lgt-blk;
+}
+
+.panel {
+  display: none;
+  background: $wh;
+  padding: 0 18px;
+}
+
+.show {
+  display: block;
+}
+
+.links li a {
+  display: inline-block;
+  background: $selection;
+  color: $wh;
+  padding: 10px;
+  transition: 200ms;
+  &:hover {
+    background: $lgt-blk;
+    color: $wh;
+    transition: 200ms;
+  }
+}
+
+@media screen and(max-width: 520px) {
+  .links li a {
+    display: block;
+    margin: 5px;
+  }
+}
